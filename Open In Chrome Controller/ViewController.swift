@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         let stringKey = NSUserDefaults.standardUserDefaults()
         savedURLLabel.text = stringKey.stringForKey("savedURL")
         
+        /*
         //Set URL
         //URL that will open in Chrome
         var openInChromeURL:NSURL = NSURL(string: "chromes://google.ca" + (savedURLLabel.text)!)!
@@ -36,8 +37,9 @@ class ViewController: UIViewController {
         }*/
         //Open in Chrome
         UIApplication.sharedApplication().openURL(openInChromeURL)
-
-
+        
+*/
+        //OPEN IN CHROME PRACTISE
     }
     
 
@@ -52,6 +54,17 @@ class ViewController: UIViewController {
         //Save URL to NSUserDefaults
         NSUserDefaults.standardUserDefaults().setObject(myURL, forKey: "savedURL")
         NSUserDefaults.standardUserDefaults().synchronize()
+        
+        //Refresh label text via reloadME
+        self.reloadMe()
+        
+    }
+    
+    //Method that will get calld to reload savedURLLabel 
+    func reloadMe(){
+        
+        let stringKey = NSUserDefaults.standardUserDefaults()
+        savedURLLabel.text = stringKey.stringForKey("savedURL")
         
     }
 
