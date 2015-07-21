@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E019C76E1B5EBDF100E9A99C /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E019C76D1B5EBDF100E9A99C /* OpenInChromeController.m */; };
 		E0EA39121B5DBE80007FB898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA39111B5DBE80007FB898 /* AppDelegate.swift */; };
 		E0EA39141B5DBE80007FB898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA39131B5DBE80007FB898 /* ViewController.swift */; };
 		E0EA39171B5DBE80007FB898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EA39151B5DBE80007FB898 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E019C76C1B5EBDF100E9A99C /* Open In Chrome Controller-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Open In Chrome Controller-Bridging-Header.h"; sourceTree = "<group>"; };
+		E019C76D1B5EBDF100E9A99C /* OpenInChromeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenInChromeController.m; sourceTree = "<group>"; };
 		E0EA390C1B5DBE80007FB898 /* Open In Chrome Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open In Chrome Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EA39101B5DBE80007FB898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0EA39111B5DBE80007FB898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				E0EA39181B5DBE80007FB898 /* Images.xcassets */,
 				E0EA391A1B5DBE80007FB898 /* LaunchScreen.xib */,
 				E0EA390F1B5DBE80007FB898 /* Supporting Files */,
+				E019C76D1B5EBDF100E9A99C /* OpenInChromeController.m */,
+				E019C76C1B5EBDF100E9A99C /* Open In Chrome Controller-Bridging-Header.h */,
 			);
 			path = "Open In Chrome Controller";
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			files = (
 				E0EA39141B5DBE80007FB898 /* ViewController.swift in Sources */,
 				E0EA39121B5DBE80007FB898 /* AppDelegate.swift in Sources */,
+				E019C76E1B5EBDF100E9A99C /* OpenInChromeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Open In Chrome Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Open In Chrome Controller/Open In Chrome Controller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +359,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Open In Chrome Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Open In Chrome Controller/Open In Chrome Controller-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +420,7 @@
 				E0EA392D1B5DBE80007FB898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0EA392E1B5DBE80007FB898 /* Build configuration list for PBXNativeTarget "Open In Chrome ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +429,7 @@
 				E0EA39301B5DBE80007FB898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
