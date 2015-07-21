@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var myURLTextField: UITextField!
-    
     @IBOutlet var savedURLLabel: UILabel!
+    @IBOutlet var WebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +33,14 @@ class ViewController: UIViewController {
         }
         else{
         UIApplication.sharedApplication().openURL(openInSafariURL)
+        @IBOutlet weak var WebView: UIWebView!
+        @IBOutlet weak var myWebView: UIWebView!
         }*/
         //Open in Chrome
         UIApplication.sharedApplication().openURL(openInChromeURL)
+        @IBOutlet var WebView: UIWebView!
+
         
-*/
         //Check if you can open URL in chrome
         var MyOpenInChromeController:OpenInChromeController = OpenInChromeController()
         if (OpenInChromeController.isChromeInstalled(MyOpenInChromeController)() == true){
@@ -47,6 +50,7 @@ class ViewController: UIViewController {
         else{
             println("Will not open with chrome")
         }
+*/
         
         
     }
