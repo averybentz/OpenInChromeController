@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet var myURLTextField: UITextField!
     
     @IBOutlet var savedURLLabel: UILabel!
@@ -39,7 +38,17 @@ class ViewController: UIViewController {
         UIApplication.sharedApplication().openURL(openInChromeURL)
         
 */
-        //OPEN IN CHROME PRACTISE
+        //Check if you can open URL in chrome
+        var MyOpenInChromeController:OpenInChromeController = OpenInChromeController()
+        if (OpenInChromeController.isChromeInstalled(MyOpenInChromeController)() == true){
+            println("Can open with chrome")
+            MyOpenInChromeController.openInChrome(NSURL(string:(savedURLLabel.text)!))
+        }
+        else{
+            println("Will not open with chrome")
+        }
+        
+        
     }
     
 
