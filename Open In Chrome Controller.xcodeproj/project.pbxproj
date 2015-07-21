@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0EA39121B5DBE80007FB898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA39111B5DBE80007FB898 /* AppDelegate.swift */; };
+		E0EA39141B5DBE80007FB898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA39131B5DBE80007FB898 /* ViewController.swift */; };
+		E0EA39171B5DBE80007FB898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EA39151B5DBE80007FB898 /* Main.storyboard */; };
+		E0EA39191B5DBE80007FB898 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EA39181B5DBE80007FB898 /* Images.xcassets */; };
+		E0EA391C1B5DBE80007FB898 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0EA391A1B5DBE80007FB898 /* LaunchScreen.xib */; };
+		E0EA39281B5DBE80007FB898 /* Open_In_Chrome_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA39271B5DBE80007FB898 /* Open_In_Chrome_ControllerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0EA39221B5DBE80007FB898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0EA39041B5DBE80007FB898 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EA390B1B5DBE80007FB898;
+			remoteInfo = "Open In Chrome Controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0EA390C1B5DBE80007FB898 /* Open In Chrome Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open In Chrome Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EA39101B5DBE80007FB898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EA39111B5DBE80007FB898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0EA39131B5DBE80007FB898 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0EA39161B5DBE80007FB898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0EA39181B5DBE80007FB898 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0EA391B1B5DBE80007FB898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E0EA39211B5DBE80007FB898 /* Open In Chrome ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open In Chrome ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EA39261B5DBE80007FB898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EA39271B5DBE80007FB898 /* Open_In_Chrome_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_In_Chrome_ControllerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0EA39091B5DBE80007FB898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA391E1B5DBE80007FB898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0EA39031B5DBE80007FB898 = {
+			isa = PBXGroup;
+			children = (
+				E0EA390E1B5DBE80007FB898 /* Open In Chrome Controller */,
+				E0EA39241B5DBE80007FB898 /* Open In Chrome ControllerTests */,
+				E0EA390D1B5DBE80007FB898 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0EA390D1B5DBE80007FB898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA390C1B5DBE80007FB898 /* Open In Chrome Controller.app */,
+				E0EA39211B5DBE80007FB898 /* Open In Chrome ControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0EA390E1B5DBE80007FB898 /* Open In Chrome Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA39111B5DBE80007FB898 /* AppDelegate.swift */,
+				E0EA39131B5DBE80007FB898 /* ViewController.swift */,
+				E0EA39151B5DBE80007FB898 /* Main.storyboard */,
+				E0EA39181B5DBE80007FB898 /* Images.xcassets */,
+				E0EA391A1B5DBE80007FB898 /* LaunchScreen.xib */,
+				E0EA390F1B5DBE80007FB898 /* Supporting Files */,
+			);
+			path = "Open In Chrome Controller";
+			sourceTree = "<group>";
+		};
+		E0EA390F1B5DBE80007FB898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA39101B5DBE80007FB898 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0EA39241B5DBE80007FB898 /* Open In Chrome ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA39271B5DBE80007FB898 /* Open_In_Chrome_ControllerTests.swift */,
+				E0EA39251B5DBE80007FB898 /* Supporting Files */,
+			);
+			path = "Open In Chrome ControllerTests";
+			sourceTree = "<group>";
+		};
+		E0EA39251B5DBE80007FB898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA39261B5DBE80007FB898 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0EA390B1B5DBE80007FB898 /* Open In Chrome Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EA392B1B5DBE80007FB898 /* Build configuration list for PBXNativeTarget "Open In Chrome Controller" */;
+			buildPhases = (
+				E0EA39081B5DBE80007FB898 /* Sources */,
+				E0EA39091B5DBE80007FB898 /* Frameworks */,
+				E0EA390A1B5DBE80007FB898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open In Chrome Controller";
+			productName = "Open In Chrome Controller";
+			productReference = E0EA390C1B5DBE80007FB898 /* Open In Chrome Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0EA39201B5DBE80007FB898 /* Open In Chrome ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EA392E1B5DBE80007FB898 /* Build configuration list for PBXNativeTarget "Open In Chrome ControllerTests" */;
+			buildPhases = (
+				E0EA391D1B5DBE80007FB898 /* Sources */,
+				E0EA391E1B5DBE80007FB898 /* Frameworks */,
+				E0EA391F1B5DBE80007FB898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0EA39231B5DBE80007FB898 /* PBXTargetDependency */,
+			);
+			name = "Open In Chrome ControllerTests";
+			productName = "Open In Chrome ControllerTests";
+			productReference = E0EA39211B5DBE80007FB898 /* Open In Chrome ControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0EA39041B5DBE80007FB898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Avery Bentz";
+				TargetAttributes = {
+					E0EA390B1B5DBE80007FB898 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E0EA39201B5DBE80007FB898 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E0EA390B1B5DBE80007FB898;
+					};
+				};
+			};
+			buildConfigurationList = E0EA39071B5DBE80007FB898 /* Build configuration list for PBXProject "Open In Chrome Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0EA39031B5DBE80007FB898;
+			productRefGroup = E0EA390D1B5DBE80007FB898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0EA390B1B5DBE80007FB898 /* Open In Chrome Controller */,
+				E0EA39201B5DBE80007FB898 /* Open In Chrome ControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0EA390A1B5DBE80007FB898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EA39171B5DBE80007FB898 /* Main.storyboard in Resources */,
+				E0EA391C1B5DBE80007FB898 /* LaunchScreen.xib in Resources */,
+				E0EA39191B5DBE80007FB898 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA391F1B5DBE80007FB898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0EA39081B5DBE80007FB898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EA39141B5DBE80007FB898 /* ViewController.swift in Sources */,
+				E0EA39121B5DBE80007FB898 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA391D1B5DBE80007FB898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EA39281B5DBE80007FB898 /* Open_In_Chrome_ControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0EA39231B5DBE80007FB898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0EA390B1B5DBE80007FB898 /* Open In Chrome Controller */;
+			targetProxy = E0EA39221B5DBE80007FB898 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0EA39151B5DBE80007FB898 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0EA39161B5DBE80007FB898 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0EA391A1B5DBE80007FB898 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0EA391B1B5DBE80007FB898 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0EA39291B5DBE80007FB898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0EA392A1B5DBE80007FB898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0EA392C1B5DBE80007FB898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Open In Chrome Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E0EA392D1B5DBE80007FB898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Open In Chrome Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E0EA392F1B5DBE80007FB898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Open In Chrome ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open In Chrome Controller.app/Open In Chrome Controller";
+			};
+			name = Debug;
+		};
+		E0EA39301B5DBE80007FB898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Open In Chrome ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open In Chrome Controller.app/Open In Chrome Controller";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0EA39071B5DBE80007FB898 /* Build configuration list for PBXProject "Open In Chrome Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EA39291B5DBE80007FB898 /* Debug */,
+				E0EA392A1B5DBE80007FB898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0EA392B1B5DBE80007FB898 /* Build configuration list for PBXNativeTarget "Open In Chrome Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EA392C1B5DBE80007FB898 /* Debug */,
+				E0EA392D1B5DBE80007FB898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0EA392E1B5DBE80007FB898 /* Build configuration list for PBXNativeTarget "Open In Chrome ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EA392F1B5DBE80007FB898 /* Debug */,
+				E0EA39301B5DBE80007FB898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0EA39041B5DBE80007FB898 /* Project object */;
+}
