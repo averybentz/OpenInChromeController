@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var myURLTextField: UITextField!
-    @IBOutlet var savedURLLabel: UILabel!
     @IBOutlet var WebView: UIWebView!
     
     //URL path that will get passed to WebView
     var URLPath = ""
+    var mySavedURL = ""
     
     
     override func viewDidLoad() {
@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         let stringKey = NSUserDefaults.standardUserDefaults()
-        savedURLLabel.text = stringKey.stringForKey("savedURL")
+        mySavedURL = stringKey.stringForKey("savedURL")!
         
         //Change URLPath to savedURLLabel
-        URLPath = savedURLLabel.text!
+        URLPath = mySavedURL
         
         //Update WebView
         self.loadAddressURL()
@@ -79,19 +79,23 @@ class ViewController: UIViewController {
         //Change URLPath to existing URL
         URLPath = myURL
         
+        /*
         //Refresh label text via reloadME
-        self.reloadMe()
+        //self.reloadMe()
+*/
         //Refresh WebView
         self.loadAddressURL()
         
     }
     
+    /*
     //Method that will get calld to reload savedURLLabel 
     func reloadMe(){
         
         let stringKey = NSUserDefaults.standardUserDefaults()
         savedURLLabel.text = stringKey.stringForKey("savedURL")
     }
+*/
     
     //Method that will load URL to WebView
     func loadAddressURL(){
