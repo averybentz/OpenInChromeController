@@ -107,7 +107,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func printMe(sender: AnyObject) {
+        // 1
+        let printController = UIPrintInteractionController.sharedPrintController()!
+        // 2
+        let printInfo = UIPrintInfo(dictionary:nil)!
+        printInfo.outputType = UIPrintInfoOutputType.General
+        printInfo.jobName = "print Job"
+        printController.printInfo = printInfo
         
+        // 3
+        let formatter = UIMarkupTextPrintFormatter()
+        formatter.contentInsets = UIEdgeInsets(top: 72, left: 72, bottom: 72, right: 72)
+        printController.printFormatter = WebView.viewPrintFormatter()
+        
+        // 4
+        printController.presentAnimated(true, completionHandler: nil)
         
     }
 }
