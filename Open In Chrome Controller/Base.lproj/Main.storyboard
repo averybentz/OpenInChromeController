@@ -37,9 +37,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-fm-FSS">
-                                <rect key="frame" x="0.0" y="150" width="600" height="389.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equate_logo" translatesAutoresizingMaskIntoConstraints="NO" id="UQ2-Je-eoe">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8QI-hm-G9b"/>
+                                    <constraint firstAttribute="height" constant="128" id="Fr8-vC-Z1t"/>
+                                </constraints>
+                            </imageView>
+                            <webView opaque="NO" contentMode="scaleAspectFit" scalesPageToFit="YES" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-fm-FSS">
+                                <rect key="frame" x="0.0" y="150" width="600" height="389.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNB-kX-lrR">
@@ -69,9 +78,11 @@
                             <constraint firstItem="P2C-H4-2GG" firstAttribute="top" secondItem="Xox-jW-ozy" secondAttribute="bottom" constant="10" id="6Xy-kK-AHz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xox-jW-ozy" secondAttribute="trailing" constant="20" id="D6x-N7-Tqi"/>
                             <constraint firstItem="kOq-fm-FSS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="HRo-r4-GSz"/>
+                            <constraint firstAttribute="centerY" secondItem="UQ2-Je-eoe" secondAttribute="centerY" id="JfC-pQ-ccR"/>
                             <constraint firstAttribute="centerX" secondItem="P2C-H4-2GG" secondAttribute="centerX" id="KM8-Wy-eIw"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AaR-n9-DFR" secondAttribute="bottom" constant="20" id="N8X-xZ-tgo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AaR-n9-DFR" secondAttribute="trailing" constant="20" id="NHg-Hk-6J9"/>
+                            <constraint firstAttribute="centerX" secondItem="UQ2-Je-eoe" secondAttribute="centerX" id="Qv8-2v-VLU"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bNB-kX-lrR" secondAttribute="bottom" constant="20" id="RNt-ch-07Y"/>
                             <constraint firstItem="Xox-jW-ozy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="bJx-pS-l3b"/>
                             <constraint firstItem="kOq-fm-FSS" firstAttribute="top" secondItem="jxZ-t5-uFf" secondAttribute="bottom" constant="10" id="eeC-jP-mYX"/>
@@ -91,4 +102,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="equate_logo" width="936" height="252"/>
+    </resources>
 </document>
