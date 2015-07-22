@@ -13,12 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet var savedURLLabel: UILabel!
     @IBOutlet var WebView: UIWebView!
     
+    //URL path that will get passed to WebView
+    var URLPath = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let stringKey = NSUserDefaults.standardUserDefaults()
         savedURLLabel.text = stringKey.stringForKey("savedURL")
+        
+        //Change URLPath to savedURLLabel
+        URLPath = savedURLLabel.text!
+        
+        //Update WebView
+        self.loadAddressURL()
         
         /*
         //Set URL
@@ -51,8 +61,6 @@ class ViewController: UIViewController {
             println("Will not open with chrome")
         }
 */
-        
-        
     }
     
 
@@ -68,8 +76,13 @@ class ViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setObject(myURL, forKey: "savedURL")
         NSUserDefaults.standardUserDefaults().synchronize()
         
+        //Change URLPath to existing URL
+        URLPath = myURL
+        
         //Refresh label text via reloadME
         self.reloadMe()
+        //Refresh WebView
+        self.loadAddressURL()
         
     }
     
@@ -78,8 +91,24 @@ class ViewController: UIViewController {
         
         let stringKey = NSUserDefaults.standardUserDefaults()
         savedURLLabel.text = stringKey.stringForKey("savedURL")
+    }
+    
+    //Method that will load URL to WebView
+    func loadAddressURL(){
+        let requestURL = NSURL(string: URLPath)
+        let request = NSURLRequest(URL: requestURL!)
+        //Load request to WebView
+        WebView.loadRequest(request)
         
     }
 
+    @IBAction func navigateBack(sender: AnyObject) {
+        self.WebView.goBack()
+    }
+    
+    @IBAction func printMe(sender: AnyObject) {
+        
+        
+    }
 }
 
