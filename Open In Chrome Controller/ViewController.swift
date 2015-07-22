@@ -22,7 +22,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         let stringKey = NSUserDefaults.standardUserDefaults()
-        mySavedURL = stringKey.stringForKey("savedURL")!
+        if let mySavedURL = stringKey.stringForKey("savedURL"){
+            
+        }
         
         //Change URLPath to savedURLLabel
         URLPath = mySavedURL
